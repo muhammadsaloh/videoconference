@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <section class="mt-4">
+        <div class="container">
+            <h1 class="text-center">
+                Video Chat
+            </h1>
+        </div>
+    </section>
+
+    <main class="pt-4 mt-4">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h2 class="card-title">
+                                Sizning id: <span id="idSpanElement"></span>
+                            </h2>
+                            <h2 class="card-title">
+                                <form id="friendIdForm">
+                                    <input id="inputDataElement" type="text" class="form-control" placeholder="Friend ID">
+                                </form>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <video class="w-100" id="myVideo" controls autoplay></video>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <video class="w-100" id="friendVideo" controls autoplay></video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="/socket/socket.io.js"></script>
+    <script src="/peerjs/peerjs.min.js"></script>
+    <script src="/main.js"></script>
+</body>
+</html>
